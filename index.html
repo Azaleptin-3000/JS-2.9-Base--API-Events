@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Tasks 2.9</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            background-color: #e5f8fd; /* Цвет фона */
+        }
+        /* Отступ первой строки только для обычных параграфов, исключая счётчик и таймер */
+        p:not(.counter):not(#timer) {
+            text-indent: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1>Решение задания по написанию кода<br/></h1>
+        <h2>2.9. API браузера. События</h2>
+
+        <div class="container">
+            <!-- Кнопка счётчика -->
+            <button id="click-button" class="button">Нажми меня</button>
+            <p class="counter">Количество нажатий: <span id="counter">0</span></p>
+
+            <!-- Форма для ввода Email -->
+            <h3>Форма для ввода Email</h3>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <span id="error-message" style="color: red; display: none;">Некорректный email</span>
+                <br>
+                <button id="submit-btn" disabled>Отправить</button>
+            </form>
+
+            <!-- Таймер -->
+            <p>Прошло секунд с момента загрузки страницы: <span id="timer">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
